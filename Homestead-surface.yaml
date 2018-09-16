@@ -1,0 +1,50 @@
+---
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: /Users/ian/
+      to: /home/vagrant/ian
+
+sites:
+    - map: coldreader-production.test
+      to: /home/vagrant/ian/coldreader_production/public
+    - map: coldreader-personal.test
+      to: /home/vagrant/ian/coldreader/public
+    - map: coldreader.test
+      to: /home/vagrant/ian/coldreader_website/public
+    - map: idiotbox.test
+      to: /home/vagrant/ian/home_server/public
+    - map: monroedigital.test
+      to: /home/vagrant/ian/monroedigital/public
+    - map: installertest.test
+      to: /home/vagrant/ian/install_test/public
+
+
+databases:
+    - coldreader_production
+    - coldreader_personal
+    - coldreader_website
+    - idiotbox
+    - monroedigital
+    - install_test
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
