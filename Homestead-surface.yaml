@@ -14,27 +14,18 @@ folders:
       to: /home/vagrant/ian
 
 sites:
-    - map: coldreader-production.test
-      to: /home/vagrant/ian/coldreader_production/public
-    - map: coldreader-personal.test
-      to: /home/vagrant/ian/coldreader/public
-    - map: coldreader.test
-      to: /home/vagrant/ian/coldreader_website/public
-    - map: idiotbox.test
-      to: /home/vagrant/ian/home_server/public
     - map: monroedigital.test
       to: /home/vagrant/ian/monroedigital/public
-    - map: installertest.test
-      to: /home/vagrant/ian/install_test/public
+    - map: hackathon.test
+      to: /home/vagrant/ian/hackathon
+    - map: hackathon-laravel.test
+      to: /home/vagrant/ian/hackathon-laravel  
 
 
 databases:
-    - coldreader_production
-    - coldreader_personal
-    - coldreader_website
-    - idiotbox
+    - hackathon
+    - hackathon-laravel
     - monroedigital
-    - install_test
 
 # blackfire:
 #     - id: foo
