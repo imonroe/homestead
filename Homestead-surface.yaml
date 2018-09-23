@@ -19,13 +19,16 @@ sites:
     - map: hackathon.test
       to: /home/vagrant/ian/hackathon
     - map: hackathon-laravel.test
-      to: /home/vagrant/ian/hackathon-laravel  
+      to: /home/vagrant/ian/hackathon-laravel
+    - map: invoiceninja.test
+      to: /home/vagrant/ian/invoiceninja  
 
 
 databases:
     - hackathon
     - hackathon-laravel
     - monroedigital
+    - invoiceninja
 
 # blackfire:
 #     - id: foo
