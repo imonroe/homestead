@@ -26,7 +26,12 @@ sites:
       to: /home/vagrant/ian/monroedigital/public
     - map: installertest.test
       to: /home/vagrant/ian/install_test/public
-
+    - map: hackathon.test
+      to: /home/vagrant/ian/hackathon
+    - map: hackathon-laravel.test
+      to: /home/vagrant/ian/hackathon-laravel/public
+    - map: sabre-qms.test
+      to: /home/vagrant/ian/qms/src
 
 databases:
     - coldreader_production
@@ -35,6 +40,9 @@ databases:
     - idiotbox
     - monroedigital
     - install_test
+    - hackathon
+    - hackathon_laravel
+    - sabre_qms
 
 # blackfire:
 #     - id: foo
