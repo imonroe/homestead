@@ -31,7 +31,9 @@ sites:
     - map: hackathon-laravel.test
       to: /home/vagrant/ian/hackathon-laravel/public
     - map: sabre-qms.test
-      to: /home/vagrant/ian/qms/src
+      to: /home/vagrant/ian/sabre/qms/src
+    - map: sabre-scheduler.test
+      to: /home/vagrant/ian/sabre/scheduler/src
 
 databases:
     - coldreader_production
@@ -43,6 +45,7 @@ databases:
     - hackathon
     - hackathon_laravel
     - sabre_qms
+    - sabre_scheduler
 
 # blackfire:
 #     - id: foo
