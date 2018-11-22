@@ -34,6 +34,8 @@ sites:
       to: /home/vagrant/ian/sabre/qms/src
     - map: sabre-scheduler.test
       to: /home/vagrant/ian/sabre/scheduler/src
+    - map: drupal8.test
+      to: /home/vagrant/ian/drupal8/web
 
 databases:
     - coldreader_production
@@ -46,6 +48,7 @@ databases:
     - hackathon_laravel
     - sabre_qms
     - sabre_scheduler
+    - drupal8
 
 # blackfire:
 #     - id: foo
