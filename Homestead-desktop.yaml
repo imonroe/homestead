@@ -34,6 +34,8 @@ sites:
       to: /home/vagrant/ian/sabre/qms/src
     - map: sabre-scheduler.test
       to: /home/vagrant/ian/sabre/scheduler/src
+    - map: sabre-web.test
+      to: /home/vagrant/ian/sabre/sabre_web
     - map: drupal8.test
       to: /home/vagrant/ian/drupal8/web
 
